@@ -206,3 +206,262 @@ button {
     transform: translateY(-6px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
+
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Caucasian Albanian", system-ui, sans-serif;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+body {
+  background: radial-gradient(circle at top left, #101935, #050814);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* =========================
+   FIRST PAGE
+========================= */
+.first-page {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#logo {
+  width: 40px;
+}
+
+.brand span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-list a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.nav-list a:hover {
+  opacity: 1;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #5ea2ff;
+}
+
+.hero-content p {
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.span-text {
+  color: #5ea2ff;
+  font-weight: 500;
+}
+
+/* =========================
+   CTA BUTTONS
+========================= */
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.cta-buttons button {
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.primary-btn {
+  background: #5ea2ff;
+  color: #050814;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #5ea2ff;
+}
+
+/* =========================
+   FEATURES LIST
+========================= */
+.features {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* =========================
+   BLUEPRINT SECTION
+========================= */
+.blueprint {
+  padding: 80px 32px;
+  background: #050814;
+}
+
+.blueprint h1 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  max-width: 720px;
+  opacity: 0.85;
+  margin-bottom: 48px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.step {
+  background: #0b1324;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.step h5 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* =========================
+   TABLET (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .nav-list {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons button {
+    width: 100%;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .blueprint {
+    padding: 60px 16px;
+    text-align: center;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   SMALL PHONES (≤480px)
+========================= */
+@media (max-width: 480px) {
+
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .blueprint h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+
